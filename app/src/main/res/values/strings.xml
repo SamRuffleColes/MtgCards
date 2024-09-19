@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MtgCards</string>
+
+    <string name="loading">Loading…</string>
+    <string name="error">Something went wrong.</string>
+    <string name="retry">Retry</string>
+
+    <string name="cd_card_image">Card image for %s</string>
+</resources>
