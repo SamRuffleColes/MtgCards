@@ -18,7 +18,6 @@ coil = "2.6.0"
 mockk = "1.12.0"
 coroutinesTest = "1.7.1"
 turbine = "1.1.0"
-mockito = "3.12.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,7 +45,6 @@ coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutinesTest" }
 turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -56,7 +54,7 @@ kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 [bundles]
-testing = ["junit", "mockk", "coroutines-test", "turbine", "mockito-core"]
+testing = ["junit", "mockk", "coroutines-test", "turbine"]
 
 
 
