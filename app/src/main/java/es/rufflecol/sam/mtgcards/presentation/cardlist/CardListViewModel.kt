@@ -68,6 +68,12 @@ class CardListViewModel @Inject constructor(
         _viewEvents.send(ViewEvent.NavigateToDetail(mtgCard.id))
     }
 
+    override fun onCleared() {
+        _viewIntents.close()
+        _viewEvents.close()
+        super.onCleared()
+    }
+
     sealed class ViewIntent {
         data object RefreshData : ViewIntent()
         data class OnCardClick(val mtgCard: SimpleMtgCard) : ViewIntent()
